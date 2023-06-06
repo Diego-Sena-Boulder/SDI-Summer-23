@@ -1,0 +1,1 @@
+Page 25, bullet point 3 "lot the value from 0 to 1,000" is missing the p in plot
