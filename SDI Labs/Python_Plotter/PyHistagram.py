@@ -1,16 +1,16 @@
 import serial
+import serial.tools.list_ports
 import matplotlib.pyplot as plt
 import numpy as np
-import time
 
 # Global Variables
 size = 500
-
+com = serial.tools.list_ports.comports()
 data = []
 bounds = [0, 0]
 fig, ax = plt.subplots(3,2)
 avrgSet = [1, 4, 16, 25, 100, 400]
-ser = serial.Serial('COM4', 2000000, timeout=1)
+ser = serial.Serial(com[0].device, 2000000, timeout=1)
 ser.flush()
 sampleSet = 0
 j = 0
