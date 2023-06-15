@@ -14,7 +14,6 @@ avrgSet = [[1, 500], [4, 500], [16, 500], [25, 500], [100, 200], [400, 200], [10
 
 ser = serial.Serial(com[0].device, 2000000, timeout=1)
 ser.flush()
-sampleSet = 0
 
 for j in avrgSet:
     integrationTime.append(j[0] * 22 / 1000)
