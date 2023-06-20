@@ -9,8 +9,8 @@ calcStd = []
 integrationTime = []
 data = []
 fig, ax = plt.subplots()
-avrgSet = [[1, 500], [4, 500], [16, 500], [25, 500], [100, 200], [400, 200], [1000, 200],
-           [4000, 200], [16000, 200], [50000, 200], [100000, 200], [200000, 200]]
+avrgSet = [[1, 500], [4, 500], [16, 500], [25, 500], [100, 200], [400, 200], [1000, 200]]
+          # [4000, 200], [16000, 200], [50000, 200], [100000, 200], [200000, 200]]
 
 ser = serial.Serial(com[0].device, 2000000, timeout=1)
 ser.flush()
@@ -18,7 +18,7 @@ ser.flush()
 for j in avrgSet:
     integrationTime.append(j[0] * 22 / 1000)
     if(j[0]):
-        ser.write((str(j[0]) + "/n" + str(j[1])).encode())
+        ser.write((str(j[0]) + "\n" + str(j[1])).encode())
         print('Averages: ' + str(j[0]) + ', with ' + str(j[1]) + ' samples')
         
         i = 0

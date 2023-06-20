@@ -23,7 +23,7 @@ ser = serial.Serial(com[0].device, 2000000, timeout=1)
 ser.flush()
 
 for i in range(0,1024):
-    ser.write((str(numAvg) + "/n" + str(numPoints) + "/n" + str(i)).encode())
+    ser.write(((str(numAvg) + "\n" + str(numPoints)) + "\n" + str(i)).encode())
     print('Averages: ' + str(numAvg) + ', with ' + str(numPoints) + ' samples, DAC_ADU: ' + str(i))
     j = 0
     while(j < numPoints):

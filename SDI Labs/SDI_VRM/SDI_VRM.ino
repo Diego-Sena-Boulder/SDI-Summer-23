@@ -26,8 +26,9 @@ void loop() {
 }
 
 void scopeSetUp() {
+  
   if(k < 3) {
-    if(Serial.available()) {
+    while(Serial.available()) {
       String str = Serial.readString();
       envVars[k] = str.toInt();
       k++;
@@ -40,6 +41,11 @@ void scopeSetUp() {
 }
 
 void func_ScopeFast() {
+
+  for (long j = 0; j < envVars[1]; j++) {
+    ADC0_ADU[j] = 0;
+    ADC1_ADU[j] = 0;
+  }
 
   /////take the measurements quickly/////////////
   for (long j = 0; j < envVars[1]; j++) {  // take measurements quickly
