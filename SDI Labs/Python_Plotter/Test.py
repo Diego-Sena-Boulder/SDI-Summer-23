@@ -17,13 +17,12 @@ ser.flush()
 size = 1000
 
 def animate(i, data1, data2, ser): 
-    num = 0
     while ser.in_waiting:
         line = ser.readline()
         string = line.decode().rstrip().split(',')
         try:
-            num1 = float(string[0])
-            num2 = float(string[1])
+            num1 = float(string[0]) * 2
+            num2 = float(string[1]) * 2
             print(string[0] +  ", " + string[1])
             data1.append(num1)
             data2.append(num2)

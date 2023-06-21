@@ -1,5 +1,6 @@
 ///////scope SDI/////////////////////////
 int k = 0;
+long last = 0;
 const long maxBuffer = 1500;
 long envVars[] = { 25, 500}; // number of points to average, size of buffer
 int pinADC0 = A1;
@@ -10,7 +11,7 @@ double mV_per_ADU = 3280 / 4095.0;  // for SAMD21
 //double arrV_mV1[maxBuffer];
 //long arrV_ADU2[maxBuffer];
 //double arrV_mV2[maxBuffer];
-//double V_DAC_V = 1.0;
+double V_DAC_V = 0.0;
 //////timing////////////////////////////////////
 long iBaudRate = 250000;
 
@@ -18,12 +19,21 @@ void setup() {
   Serial.begin(iBaudRate);
   delay(1000);  //lets the serial port get initialized
   analogReadResolution(12);
-  //V_DAC_ADU = V_DAC_V * 1023.0 / 3.28; // to use as a reference
-  //analogWrite(A0, V_DAC_ADU);
-
+  V_DAC_ADU = V_DAC_V * 1023.0 / 3.28; // to use as a reference
+  analogWrite(A0, V_DAC_ADU);
 }
 
 void loop() {
+  if(millis() - last >= 500) {
+    last = millis();
+    if(V_DAC_V >= 3.3)
+      V_DAC_V = 0;
+    else
+      V_DAC_V += 0.1;
+    analogWrite(A0, V_DAC_ADU);
+    V_DAC_ADU = V_DAC_V * 1023.0 / 3.28;
+  }
+  
   runScope();
 }
 

@@ -1,7 +1,7 @@
 ///////scope SDI/////////////////////////
 int k = 0;
 const long maxBuffer = 1200;
-long envVars[] = { 1, 500, 0}; // number of points to average, size of buffer, DAC_ADU
+long envVars[] = { 100, 200, 0}; // number of points to average, size of buffer, DAC_ADU
 int pinADC0 = A1;
 int pinADC1 = A2;
 float mV_per_ADU = 3280 / 4095.0;  // for SAMD21
@@ -28,8 +28,9 @@ void loop() {
 void scopeSetUp() {
   
   if(k < 3) {
-    while(Serial.available()) {
-      String str = Serial.readString();
+    if(Serial.available()) {
+      String str = Serial.readStringUntil(',');
+      str.trim();
       envVars[k] = str.toInt();
       k++;
     }
