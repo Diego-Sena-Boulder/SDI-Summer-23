@@ -17,7 +17,7 @@ sourceResistor_Ohm = 100.0
 voltsADU = np.linspace(0, 3.3, 1024)
 numAvg = 100
 numPoints = 200
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(3, 1)
 
 ser = serial.Serial(com[0].device, 2000000, timeout=1)
 ser.flush()
@@ -43,7 +43,7 @@ while(j < numPoints):
 
 theveninVoltage = np.mean(data1)
 
-for i in range(900 ,1024, 2):
+for i in range(900 ,1024, 10):
     
     ser.write((str(numAvg) + "," + str(numPoints) + "," + str(i)).encode())
     print('Averages: ' + str(numAvg) + ', with ' + str(numPoints) + ' samples, DAC_ADU: ' + str(i))
@@ -77,10 +77,21 @@ for i in range(900 ,1024, 2):
 
 thevenin_Mean = np.mean(thevenin_Ohm)
 
-ax.plot(sourceCurrent_mA, thevenin_Ohm)
-ax.axhline(y = thevenin_Mean, color='r')
-ax.set_title('Current vs Resistance, ' + 'Mean resistance: ' + '{:0.2f}'.format(thevenin_Mean) + '\u03A9')
-ax.set_xlabel('Current (mA)')
-ax.set_ylabel('Resistance (\u03A9)')
+ax[0].plot(sourceCurrent_mA, thevenin_Ohm)
+ax[0].axhline(y = thevenin_Mean, color='r')
+ax[0].set_title('Current vs Resistance, ' + 'Mean resistance: ' + '{:0.2f}'.format(thevenin_Mean) + '\u03A9')
+ax[0].set_xlabel('Current (mA)')
+ax[0].set_ylabel('Resistance (\u03A9)')
 
+ax[1].plot(sourceCurrent_mA, drain_mV)
+ax[1].set_title('Current vs Drain Voltae')
+ax[1].set_xlabel('Current (mA)')
+ax[1].set_ylabel('Voltage (mV)')
+
+ax[2].plot(sourceCurrent_mA, source_mV)
+ax[2].set_title('Current vs Source Voltage')
+ax[2].set_xlabel('Current (mA)')
+ax[2].set_ylabel('Voltage (mV)')
+
+fig.tight_layout()
 plt.show()
