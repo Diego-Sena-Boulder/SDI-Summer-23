@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=R3 Old Footprint=0402_Passive_Resistor New Footprint=AXIAL-0.3
+Change Component Comment: Designator=R3 Old Comment=10k New Comment=Res1
+Change Pin Designator/Name:  Old Designator=R3-1 Old Name=1 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=R3-2 Old Name=2 New Designator =1 New Name=1

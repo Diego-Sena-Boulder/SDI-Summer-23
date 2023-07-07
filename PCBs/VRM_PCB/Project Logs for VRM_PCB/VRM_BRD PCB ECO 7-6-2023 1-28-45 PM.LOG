@@ -1,0 +1,20 @@
+Change Component DesignItemId : Designator=R2 Old DesignItemId=R_100KOhm_0402 New DesignItemId=R_100KOhm_1206
+Change Component DesignItemId : Designator=R4 Old DesignItemId=R_100KOhm_0402 New DesignItemId=R_100KOhm_1206
+Change Component Footprint: Designator=R2 Old Footprint=0402_Passive_Resistor New Footprint=1206_Passive_Resitor
+Change Component Footprint: Designator=R4 Old Footprint=0402_Passive_Resistor New Footprint=1206_Passive_Resitor
+Change Component Comment : Designator=R2 Old Comment=10k New Comment=100KOhm
+Change Component Comment : Designator=R4 Old Comment=10k New Comment=100KOhm
+Change Component Description : Designator=R2 Old Description=CHIP RESISTOR - SURFACE MOUNT 100KOHMS ±1% 1/16W 0402 ROHS New Description=100kO ±1% 0.25W ±100ppm/? 1206 Chip Resistor - Surface Mount RoHS
+Change Component Description : Designator=R4 Old Description=CHIP RESISTOR - SURFACE MOUNT 100KOHMS ±1% 1/16W 0402 ROHS New Description=100kO ±1% 0.25W ±100ppm/? 1206 Chip Resistor - Surface Mount RoHS
+Change component parameters: Designator = "R2" ("R2"); Footprint = "0402_Passive_Resistor"; UniqueID = "\CTPYHMWM" ("\CTPYHMWM")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://datasheet.lcsc.com/lcsc/1810301421_UNI-ROYAL-Uniroyal-Elec-1206W4F1003T5E_C17900.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C17900"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "1206W4F1003T5E"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Basic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100KOhm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "0402_Passive_Resistor"; UniqueID = "\ATPYMIQB" ("\ATPYMIQB")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://datasheet.lcsc.com/lcsc/1810301421_UNI-ROYAL-Uniroyal-Elec-1206W4F1003T5E_C17900.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C17900"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "1206W4F1003T5E"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Basic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100KOhm"; VariantName = "[No Variations]"

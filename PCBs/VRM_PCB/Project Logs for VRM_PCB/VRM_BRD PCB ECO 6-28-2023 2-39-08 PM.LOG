@@ -1,0 +1,10 @@
+Change Component DesignItemId : Designator=R5 Old DesignItemId=R_100KOhm_0402 New DesignItemId=R_10KOhm_0402
+Change Component Footprint: Designator=R5 Old Footprint=AXIAL-0.3 New Footprint=0402_Passive_Resistor
+Change Component Comment : Designator=R5 Old Comment=Res1 New Comment=10k
+Change Component Description : Designator=R5 Old Description=CHIP RESISTOR - SURFACE MOUNT 100KOHMS ±1% 1/16W 0402 ROHS New Description=CHIP RESISTOR - SURFACE MOUNT 10KOHMS ±1% 1/16W 0402 ROHS
+Change component parameters: Designator = "R5" ("R5"); Footprint = "AXIAL-0.3"; UniqueID = "\GFRUBEPM" ("\GFRUBEPM")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C25744"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "0402WGF1002TCE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Basic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10KOhm"; VariantName = "[No Variations]"

@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NetM1_3 Pin=P1-1
+Removed Pin From Net: NetName=GND Pin=P2-1
+Change Component Footprint: Designator=P1 Old Footprint=PIN1 New Footprint=JF-1_SSQ-101-03-T-S
+Change Component Footprint: Designator=P2 Old Footprint=PIN1 New Footprint=JF-1_SSQ-101-03-T-S
+Change Component Comment : Designator=P1 Old Comment=Plug New Comment=SSQ-101-03-T-S
+Change Component Comment : Designator=P2 Old Comment=Plug New Comment=SSQ-101-03-T-S
+Change Component Designator: OldDesignator=P1 NewDesignator=J2
+Change Component Designator: OldDesignator=P2 NewDesignator=J3
+Change component parameters: Designator = "P1" ("J2"); Footprint = "PIN1"; UniqueID = "\ZUXABBQA" ("\ZUXABBQA")
+Change component parameters (AddParameter): Name = "LCSC PART#"; Value = "C2883837"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR PART #"; Value = "X6511FV-01-C85D32"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "SSQ-101-03-T-S"; VariantName = "[No Variations]"
+Change component parameters: Designator = "P2" ("J3"); Footprint = "PIN1"; UniqueID = "\PQXBCQPY" ("\PQXBCQPY")
+Change component parameters (AddParameter): Name = "LCSC PART#"; Value = "C2883837"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR PART #"; Value = "X6511FV-01-C85D32"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "SSQ-101-03-T-S"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J2-01
+Added Pin To Net: NetName=NetM1_3 Pin=J3-01
+Change Net Name : Old Net Name=NetM1_3 New Net Name=NetJ3_01

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Drain Pin=U2-2
+Removed Pin From Net: NetName=Source Pin=U2-3
+Added Pin To Net: NetName=Source Pin=U2-2
+Added Pin To Net: NetName=Drain Pin=U2-3

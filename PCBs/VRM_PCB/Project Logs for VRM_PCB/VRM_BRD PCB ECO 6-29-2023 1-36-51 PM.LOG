@@ -1,0 +1,11 @@
+Added Component: Designator=J1(JF-2_1X2_TU_SSQ)
+Add component (AddParameter): Name = "LCSC PART#"; Value = "C49661"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MFR PART #"; Value = "C49661"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MFR PN"; Value = "SSQ-102-02-G-S"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetM1_2 Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-2
+Change Net Name : Old Net Name=NetM1_2 New Net Name=NetJ1_1
+Added Member To Class: ClassName=VRM_Schematic Member=Component J1 SSQ-102-02-G-S
+Added Member To Class: ClassName=VRM_Schematic Member=Component P3 2P Screw Terminal Block
+Added Member To Class: ClassName=VRM_Schematic Member=Component P4 Power Jack
+Change Rule Scope 1 : Old Scope=InNet('NetM1_2') New Scope=InNet('NetJ1_1')

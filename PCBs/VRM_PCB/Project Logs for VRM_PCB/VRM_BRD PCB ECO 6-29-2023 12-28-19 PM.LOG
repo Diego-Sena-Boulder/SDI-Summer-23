@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetU1_8 Pin=U2-12
+Added Pin To Net: NetName=NetU1_8 Pin=U2-4
+Added Member To Class: ClassName=VRM_Schematic Member=Component M1 IRL520NPBF
+Added Member To Class: ClassName=VRM_Schematic Member=Component U1 TLV4110IDG4

@@ -1,0 +1,21 @@
+Change Component Footprint: Designator=J2 Old Footprint=691214110002 New Footprint=P_Terminal block 3.5mm-pitch
+Change Component Footprint: Designator=J1 Old Footprint=FP-PJ-102A-MFG New Footprint=Power_Jack
+Change Component Comment : Designator=J2 Old Comment=691214110002 New Comment=2P Screw Terminal Block
+Change Component Comment : Designator=J1 Old Comment=PJ-102A New Comment=Power Jack
+Change Component Designator: OldDesignator=J1 NewDesignator=P4
+Change Component Designator: OldDesignator=J2 NewDesignator=P3
+Change Managed Component Library Link : Designator=P4 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=80EE9AF9-24BD-4CC5-9526-C0900B821B13 New ItemGUID= Old RevisionGUID=2A91736E-1263-4C40-B12A-703DFEA5CB6A New RevisionGUID=
+Change Managed Component Library Link : Designator=P3 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=57BBA258-B4B2-4518-AA87-22EF9E9D5922 New ItemGUID= Old RevisionGUID=65DEE045-D3D4-4FB8-A3AA-9764675C42C4 New RevisionGUID=
+Change component parameters: Designator = "J1" ("P4"); Footprint = "FP-PJ-102A-MFG"; UniqueID = "\MHMZKKJO" ("\MHMZKKJO")
+Change component parameters (AddParameter): Name = "Digikey Link"; Value = "https://www.digikey.com/product-detail/en/PJ-102A/CP-102A-ND/275425/?itemSeq=304982367"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C136744"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "PJ-102A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Extended"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "CONN PWR JACK 2X5.5MM SOLDER"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2" ("P3"); Footprint = "691214110002"; UniqueID = "\OSZTRIMU" ("\OSZTRIMU")
+Change component parameters (AddParameter): Name = "DataSheet"; Value = "https://datasheet.lcsc.com/lcsc/2001160007_Cixi-Kefa-Elec-KF350-3-5-2P_C474892.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C474892"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Cixi Kefa Elec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "KF350-3.5-2P"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=NetJ1_1 New Net Name=NetM1_2
+Change Rule Scope 1 : Old Scope=InNet('NetJ1_1') New Scope=InNet('NetM1_2')

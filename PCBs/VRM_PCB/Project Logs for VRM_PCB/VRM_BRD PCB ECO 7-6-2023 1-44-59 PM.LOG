@@ -1,0 +1,36 @@
+Change Component DesignItemId : Designator=R1 Old DesignItemId=R_10KOhm_0402 New DesignItemId=R_10KOhm_1206
+Change Component DesignItemId : Designator=R3 Old DesignItemId=R_10KOhm_0402 New DesignItemId=R_10KOhm_1206
+Change Component DesignItemId : Designator=R5 Old DesignItemId=R_10KOhm_0402 New DesignItemId=R_10KOhm_1206
+Change Component DesignItemId : Designator=R7 Old DesignItemId=R_10KOhm_0402 New DesignItemId=R_10KOhm_1206
+Change Component Footprint: Designator=R1 Old Footprint=0402_Passive_Resistor New Footprint=1206_Passive_Resitor
+Change Component Footprint: Designator=R3 Old Footprint=0402_Passive_Resistor New Footprint=1206_Passive_Resitor
+Change Component Footprint: Designator=R5 Old Footprint=0402_Passive_Resistor New Footprint=1206_Passive_Resitor
+Change Component Footprint: Designator=R7 Old Footprint=0402_Passive_Resistor New Footprint=1206_Passive_Resitor
+Change Component Description : Designator=R1 Old Description=CHIP RESISTOR - SURFACE MOUNT 10KOHMS ±1% 1/16W 0402 ROHS New Description=10 kOhms ±5% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film
+Change Component Description : Designator=R3 Old Description=CHIP RESISTOR - SURFACE MOUNT 10KOHMS ±1% 1/16W 0402 ROHS New Description=10 kOhms ±5% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film
+Change Component Description : Designator=R5 Old Description=CHIP RESISTOR - SURFACE MOUNT 10KOHMS ±1% 1/16W 0402 ROHS New Description=10 kOhms ±5% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film
+Change Component Description : Designator=R7 Old Description=CHIP RESISTOR - SURFACE MOUNT 10KOHMS ±1% 1/16W 0402 ROHS New Description=10 kOhms ±5% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200 Thick Film
+Change component parameters: Designator = "R1" ("R1"); Footprint = "0402_Passive_Resistor"; UniqueID = "\HSPVUXKJ" ("\HSPVUXKJ")
+Change component parameters (AddParameter): Name = "Digikey Link"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FT10K0/1759669"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C17902"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "RMCF1206FT10K0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Basic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10KOhm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3" ("R3"); Footprint = "0402_Passive_Resistor"; UniqueID = "\TTRUEKDU" ("\TTRUEKDU")
+Change component parameters (AddParameter): Name = "Digikey Link"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FT10K0/1759669"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C17902"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "RMCF1206FT10K0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Basic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10KOhm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R5" ("R5"); Footprint = "0402_Passive_Resistor"; UniqueID = "\GFRUBEPM" ("\GFRUBEPM")
+Change component parameters (AddParameter): Name = "Digikey Link"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FT10K0/1759669"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C17902"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "RMCF1206FT10K0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Basic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10KOhm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7" ("R7"); Footprint = "0402_Passive_Resistor"; UniqueID = "\XLYDSQWP" ("\XLYDSQWP")
+Change component parameters (AddParameter): Name = "Digikey Link"; Value = "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF1206FT10K0/1759669"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part#"; Value = "C17902"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFR Part #"; Value = "RMCF1206FT10K0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Basic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10KOhm"; VariantName = "[No Variations]"
