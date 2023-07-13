@@ -1,0 +1,13 @@
+Added Component: Designator=TP2(TP10x_Probe)
+Added Component: Designator=TP3(TP10x_Probe)
+Added Pin To Net: NetName=NetJ1_1 Pin=TP2-1
+Added Pin To Net: NetName=GND Pin=TP2-2
+Added Pin To Net: NetName=GND Pin=TP2-2
+Added Pin To Net: NetName=GND Pin=TP2-2
+Added Pin To Net: NetName=NetM1_1 Pin=TP3-1
+Added Pin To Net: NetName=GND Pin=TP3-2
+Added Pin To Net: NetName=GND Pin=TP3-2
+Added Pin To Net: NetName=GND Pin=TP3-2
+Added Pin To Net: NetName=NetM1_1 Pin=U1-2
+Added Member To Class: ClassName=VRM_Schematic Member=Component TP2 10x Probe TP
+Added Member To Class: ClassName=VRM_Schematic Member=Component TP3 10x Probe TP

@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=NetJ2_01 Pin=R6-2
+Removed Pin From Net: NetName=GND Pin=R7-1
+Removed Pin From Net: NetName=NetJ2_01 Pin=R8-2
+Removed Pin From Net: NetName=NetM1_1 Pin=U-1
+Removed Pin From Net: NetName=GND Pin=U-4
+Removed Pin From Net: NetName=NetJ1_1 Pin=U-8
+Removed Member From Class: ClassName=VRM_Schematic Member=R6
+Removed Member From Class: ClassName=VRM_Schematic Member=R7
+Removed Member From Class: ClassName=VRM_Schematic Member=R8
+Removed Member From Class: ClassName=VRM_Schematic Member=U
+Added Component: Designator=TP1(TP10x_Probe)
+Added Component: Designator=U1(SOIC127P600X175-8N)
+Add component (AddParameter): Name = "DataSheet"; Value = "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part#"; Value = "C7377"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MFR Part #"; Value = "MCP6002T-I/SN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Basic"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=TP1-2
+Added Pin To Net: NetName=GND Pin=TP1-2
+Added Pin To Net: NetName=GND Pin=TP1-2
+Added Pin To Net: NetName=NetM1_1 Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Pin To Net: NetName=GND Pin=U1-8
+Added Pin To Net: NetName=NetTP1_1 Pin=TP1-1
+Added Pin To Net: NetName=NetTP1_1 Pin=U2-1
+Added Net: Name=NetTP1_1
+Added Pin To Net: NetName=NetU1_3 Pin=U1-3
+Added Pin To Net: NetName=NetU1_3 Pin=U2-4
+Added Net: Name=NetU1_3
+Added Pin To Net: NetName=NetU1_4 Pin=U1-4
+Added Pin To Net: NetName=NetU1_4 Pin=U2-14
+Added Net: Name=NetU1_4
+Added Pin To Net: NetName=NetU1_6 Pin=U1-6
+Added Pin To Net: NetName=NetU1_6 Pin=U1-7
+Added Net: Name=NetU1_6
+Added Member To Class: ClassName=VRM_Schematic Member=Component TP1 10x Probe TP
+Added Member To Class: ClassName=VRM_Schematic Member=Component U1 MCP6002T-I/SN
+Change Rule Scope 1 : Old Scope=InNet('NetJ1_1') New Scope=InNet('GND')

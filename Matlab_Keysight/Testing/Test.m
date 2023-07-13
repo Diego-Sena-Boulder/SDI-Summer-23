@@ -4,11 +4,11 @@ close all
 clc
 
 %% Set Vars
-sampleRateHz = 5e9;
-sampleTimeS = 200e-9;
-sampleLen = sampleTimeS*sampleRateHz;
+expectedFrequency = 10e6; % which is in Hz
+numCycles = 10;
+sampleTimeS = 1 / expectedFrequency * numCycles;
 maxTime = 1e9;
-numAvg = 100;
+numAvg = 1000;
 
 %% Instrument Connection & Reset Device
 devlist = ividevlist("Timeout",40);
@@ -18,22 +18,17 @@ myScope.Acquisition.InitiateContinuous = true;
 %% Set Scope Up
 % Configure horizontal time scale
 myScope.Acquisition.HorizontalTimePerRecord = sampleTimeS; % Seconds
-myScope.Channel("Channel1").VerticalRange = 1.2;
+myScope.Channel("Channel1").VerticalRange = 1.8;
 myScope.Channel("Channel1").ProbeAttenuation = 1;
+myScope.Acquisition.AcquisitionType = "AVERAGE";
+myScope.Acquisition.NumberOfAverages = numAvg;
 myScope.Trigger.TriggerLevel = 0;
 %% Gather Data
 sampleLen = myScope.Acquisition.HorizontalRecordLength;
 sampleRateHz = myScope.Acquisition.HorizontalSampleRate;
 [waveformArray, actualPoints] = readWaveform(myScope, "Channel1", sampleLen, maxTime);
-
-for n = 0:(numAvg - 2)
-    [holdwaveformArray, actualPoints] = readWaveform(myScope, "Channel1", sampleLen, maxTime);
-    waveformArray = waveformArray + holdwaveformArray;
-end
-
-waveformArray = waveformArray ./ numAvg;
 dt = myScope.Acquisition.HorizontalTimePerRecord/myScope.Acquisition.HorizontalRecordLength;
-t = (0:sampleLen-1) * dt;
+t = (-sampleLen/2:sampleLen/2-1) * dt;
 
 figure (1)
 plot(t, waveformArray, 'LineWidth', 1)
@@ -49,9 +44,9 @@ dataFFT = abs(DataFFT(1:sampleLen/2));
 figure (2)
 loglog(f_HZ, dataFFT, 'o', 'LineWidth', 2)
 grid on;
-xlabel('Frequency (hz)')
-ylabel('Magnitude (Vpp)')
-xlim([0 200e6])
+xlabel('Frequency (hz)', 'FontSize', 14)
+ylabel('Amplitude (A)', 'FontSize', 14)
+
 
 
 
