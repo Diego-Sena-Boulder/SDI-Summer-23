@@ -5,17 +5,11 @@ clc
 
 %% Set Vars
 sampleLen = 5000;
-duty = 50.143;
+duty = 50.2;
 amplitude = 0.8;
 frequency = 10e6;
 
-%% Instrument Connection & Reset Device
-devlist = ividevlist("Timeout", 40);
-myScope = ividev(devlist.MATLABDriver(1), devlist.ResourceName(1), ResetDevice = true);
-myScope.Acquisition.InitiateContinuous = true;
-
 %% Generate Time Vector
-
 t = linspace(-500e-9, 500e-9, sampleLen);
 
 %% Generate Square Wave
